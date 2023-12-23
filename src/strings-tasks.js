@@ -24,6 +24,7 @@ function getStringLength(value) {
     return value.length;
   }
   return 0;
+  // throw new Error('Not implemented');
 }
 /**
  * Returns true if the value is a string, otherwise returns false.
@@ -39,10 +40,13 @@ function getStringLength(value) {
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(/* value */) {
+function isString() {
+  // if (typeof valuee === 'string') {
+  //   return true;
+  // }
+  // return false;
   throw new Error('Not implemented');
 }
-
 /**
  * Returns the result of concatenation of two strings.
  *
@@ -55,10 +59,9 @@ function isString(/* value */) {
  *   concatenateStrings('aa', '') => 'aa'.
  *   concatenateStrings('', 'bb') => 'bb'
  */
-function concatenateStrings(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function concatenateStrings(value1, value2) {
+  return value1.concat(value2);
 }
-
 /**
  * Returns the first character of the given string.
  *
